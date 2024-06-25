@@ -22,4 +22,4 @@ and from these two you can send two wires to 5v of arduino and ground in arduino
 the enable pins and the logic pins on hb
 
 enable A(pink) - input 1(grey) - input 2(white) 
-attach to arduino in 
+attach to arduino in 3-4-5
