@@ -65,21 +65,22 @@ else if(remote=='S'){
 //-------------------H-bridge-------------------------------
 // car movement functions: enabling required motors with appropriate speeds
 void backward(){
-  analogWrite(enA, speed);
-  digitalWrite(in1, LOW);
-  digitalWrite(in2, HIGH);
-  analogWrite(enB, speed);
-  digitalWrite(in3, LOW);
-  digitalWrite(in4, HIGH);
-  
-}
-void forward(){
   analogWrite(enB, speed);
   analogWrite(enA, speed);
   digitalWrite(in1, HIGH);
   digitalWrite(in2, LOW);  
   digitalWrite(in3, HIGH);
   digitalWrite(in4, LOW); 
+  
+}
+void forward(){
+
+  analogWrite(enA, speed);
+  digitalWrite(in1, LOW);
+  digitalWrite(in2, HIGH);
+  analogWrite(enB, speed);
+  digitalWrite(in3, LOW);
+  digitalWrite(in4, HIGH);
 }
 void left(){
   
