@@ -1,0 +1,37 @@
+https://www.youtube.com/watch?v=q-Clw0m3E18
+this video is great start
+
+also this 
+https://www.youtube.com/watch?v=BACBNgaCnJU&t=372s
+https://dronebotworkshop.com/radio-control-arduino-car/
+
+this to connect reciever
+https://www.google.com/search?q=ia6b+bliking+red&sca_esv=0bc43c4c8dd2597c&sxsrf=ADLYWII1ub0gBpfMItuQB4kTrYa2j4KL8w%3A1719320356503&ei=JL96ZvChHt-N7NYPhv2kwAo&ved=0ahUKEwjww-q45_aGAxXfBtsEHYY-CagQ4dUDCBA&uact=5&oq=ia6b+bliking+red&gs_lp=Egxnd3Mtd2l6LXNlcnAiEGlhNmIgYmxpa2luZyByZWQyCBAAGIAEGKIEMggQABiABBiiBDIIEAAYgAQYogQyCBAAGIAEGKIESIZgUABYg15wA3gBkAEBmAH3AqABzyKqAQgwLjEuMTcuMbgBA8gBAPgBAZgCFaACsCGoAhTCAgcQIxgnGOoCwgIHEC4YJxjqAsICFhAuGAMYtAIY5QIY6gIYjAMYjwHYAQHCAhYQABgDGLQCGOUCGOoCGIwDGI8B2AEBwgIEECMYJ8ICChAjGIAEGCcYigXCAgsQABiABBiRAhiKBcICDhAAGIAEGLEDGIMBGIoFwgIFEC4YgATCAgsQLhiABBixAxiDAcICCxAAGIAEGLEDGIMBwgIREC4YgAQYsQMY0QMYgwEYxwHCAggQLhiABBixA8ICCBAAGIAEGLEDwgIOEC4YgAQYsQMYxwEYrwHCAg4QLhiABBixAxiDARiKBcICIBAuGIAEGLEDGNEDGIMBGMcBGJcFGNwEGN4EGOAE2AECwgIFEAAYgATCAgoQABiABBhDGIoFwgIEEAAYHsICBhAAGB4YD8ICBhAAGAUYHsICCBAAGBYYHhgPwgIGEAAYFhgewgILEAAYgAQYhgMYigXCAgUQIRigAcICBxAhGKABGArCAgQQIRgKwgIEECEYFcICBRAhGJ8FmAMPugYGCAEQARgLugYGCAIQARgUkgcIMy4xLjE2LjGgB5tv&sclient=gws-wiz-serp#fpstate=ive&vld=cid:4bf79f18,vid:8a2Op7Zbqm8,st:0
+https://www.youtube.com/watch?v=v5SXRkQMgkA&t=70s
+
+
+The error message indicates that the Arduino IDE is unable to find the `IBusBM.h` library. 
+This usually means that the library is not installed. To resolve this issue, you need to install the IBusBM library. Here’s how you can do it:
+
+### Method 1: Using the Arduino Library Manager
+
+1. **Open the Arduino IDE**.
+2. **Go to `Sketch` > `Include Library` > `Manage Libraries...`**.
+3. **In the Library Manager, type `IBusBM` in the search box**.
+4. **Find the `IBusBM` library in the list and click on `Install`**.
+
+### Method 2: Manual Installation
+
+1. **Download the IBusBM library**:
+   - You can find the library on GitHub or the Arduino Library Manager.
+   - For example, you can download it from [this GitHub repository](https://github.com/bmellink/IBusBM).
+
+2. **Extract the library**:
+   - If you downloaded a ZIP file, extract its contents.
+
+3. **Copy the library to the Arduino libraries folder**:
+   - Locate your Arduino libraries folder. This is usually found in your documents folder, under `Arduino/libraries`.
+   - Copy the extracted `IBusBM` folder into the `libraries` folder.
+
+4. **Restart the Arduino IDE**:
+   - Close and reopen the Arduino IDE to ensure it recognizes the new library.
