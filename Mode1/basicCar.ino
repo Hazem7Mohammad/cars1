@@ -36,18 +36,18 @@ delay(10000);//count 10sec before starting
 
 
 forward();
-delay(2000);
+delay(1000);
 off();
 right();
-delay(3000);
+delay(1000);
 off();
 delay(1000);
 left();
-delay(3000);
+delay(1000);
 off();
-delay(500);
+delay(1000);
 backward();
-delay(2000);
+delay(1000);
 off();
 }
 
@@ -55,39 +55,40 @@ off();
 //-------------------H-bridge-------------------------------
 // car movement functions: enabling required motors with appropriate speeds
 void backward(){
+
+  analogWrite(enB, speed);
+  analogWrite(enA, speed);
+  digitalWrite(in1, HIGH);
+  digitalWrite(in2, LOW);  
+  digitalWrite(in3, HIGH);
+  digitalWrite(in4, LOW);
+  
+}
+void forward(){
   analogWrite(enA, speed);
   digitalWrite(in1, LOW);
   digitalWrite(in2, HIGH);
   analogWrite(enB, speed);
   digitalWrite(in3, LOW);
   digitalWrite(in4, HIGH);
-  
-}
-void forward(){
-  analogWrite(enB, speed);
-  analogWrite(enA, speed);
-  digitalWrite(in1, HIGH);
-  digitalWrite(in2, LOW);  
-  digitalWrite(in3, HIGH);
-  digitalWrite(in4, LOW); 
 }
 void right(){
-  
-  analogWrite(enA, speed);
-  digitalWrite(in1, HIGH);
-  digitalWrite(in2, LOW); 
-  analogWrite(enB, speed); 
-  digitalWrite(in3, LOW);
-  digitalWrite(in4, HIGH);
-}
-void left(){
-  
   analogWrite(enA, speed);
   digitalWrite(in1, LOW);
   digitalWrite(in2, HIGH);
   analogWrite(enB, speed);  
   digitalWrite(in3, HIGH);
   digitalWrite(in4, LOW);
+}
+void left(){
+  
+
+  analogWrite(enA, speed);
+  digitalWrite(in1, HIGH);
+  digitalWrite(in2, LOW); 
+  analogWrite(enB, speed); 
+  digitalWrite(in3, LOW);
+  digitalWrite(in4, HIGH);
 }
 void off(){
   digitalWrite(in1, LOW);
