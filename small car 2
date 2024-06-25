@@ -1,0 +1,25 @@
+so the car build 
+
+in the picture you see HBridge.png 
+
+you have 4 wheels 2 on each side and in the back of the car is the h bridge 
+the power ports of the hb is facing also the back 
+
+motor a port is for the left wheels 
+motor b port is for the right wheels
+
+so so far you have base and 4 motors attached to each side of hb 
+
+from 12v 4000 mA battery you can connect ground to ground port in hb and 12v wire to left port
+also ground of battery can go to - in bread board 
+
+and now attach a wire going from the 5v right power port of the hb to the arduino 5v and 
+another ground wire to ground port of arduino 
+or
+attach the 5v to + in bread board and ground to - in bread board 
+and from these two you can send two wires to 5v of arduino and ground in arduino 
+
+the enable pins and the logic pins on hb
+
+enable A(pink) - input 1(grey) - input 2(white) 
+attach to arduino in 
