@@ -23,3 +23,15 @@ the enable pins and the logic pins on hb
 
 enable A(pink) - input 1(grey) - input 2(white) 
 attach to arduino in 3-4-5
+
+input 3(yellow) - input 4(green) - enable B(blue) 
+attach to arduino in 7-8-9
+
+now the arduino code which is bluetooth1.ino to arduino and attach bluetooth device
+
++ and - to bread board and tx to rx and rx to tx 
+
+you can open the app on phone and play with car 
+
+# note that there might be something wrong in wires as pins in codes are different than
+pins in real car so take not of that 
