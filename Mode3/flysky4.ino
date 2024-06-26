@@ -62,21 +62,23 @@ void loop() {
   Serial.print(" | Ch4: ");
   Serial.println(ch4Value);
 
-  if(ch1Value > 50){
-    forward();
-  }
-  else if(ch1Value < -50){
-    backward();
-  }
-  else if(ch2Value > 50){
-    right();
-  }
-  else if(ch2Value < -50){
-    left();
-  }
-  else {
-    off();
-  }
+  forward();
+  
+  // if(ch1Value > 50){
+  //   forward();
+  // }
+  // else if(ch1Value < -50){
+  //   backward();
+  // }
+  // else if(ch2Value > 50){
+  //   right();
+  // }
+  // else if(ch2Value < -50){
+  //   left();
+  // }
+  // else {
+  //   off();
+  // }
 }
 
 void backward(){
