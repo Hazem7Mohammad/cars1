@@ -45,6 +45,7 @@ void loop() {
   ch1Value = readChannel(CH1, -100, 100, 0);
   if ch1Value > 0 {
     map(speed, 0, 100, 0, 255)
+    forward();
   } 
   else if ch1Value < 0 {
     map(speed, 0, -100, 0, 255)
@@ -62,7 +63,7 @@ void loop() {
   Serial.print(" | Ch4: ");
   Serial.println(ch4Value);
 
-  forward();
+  
   
   // if(ch1Value > 50){
   //   forward();
