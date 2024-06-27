@@ -1,0 +1,48 @@
+To run the command `rosrun rosserial_python serial_node.py /dev/ttyACM0 -baud:=57600`, you need to ensure you have the following prerequisites met:
+
+1. **ROS Installation:** Make sure you have ROS (Robot Operating System) installed and properly set up on your Ubuntu 16.04 system. You can refer to the ROS installation instructions for Ubuntu 16.04 if you haven't installed it yet.
+
+2. **rosserial_python Package:** Ensure that the `rosserial_python` package is installed in your ROS workspace or environment. You can install it using `apt-get` if it's available as a package or through `pip` if it's not.
+
+   - If available via `apt-get`:
+     ```bash
+     sudo apt-get install ros-<distro>-rosserial-python
+     ```
+     Replace `<distro>` with your ROS distribution (e.g., `kinetic`, `melodic`).
+
+   - If not available via `apt-get`, install it using `pip`:
+     ```bash
+     sudo pip install pyserial
+     ```
+
+3. **Device Path (`/dev/ttyACM0`):** Ensure that `/dev/ttyACM0` is the correct device path for your Arduino board or whichever device you are communicating with via serial.
+
+4. **Correct Baud Rate (`57600`):** Ensure that `57600` is the correct baud rate for your serial communication. Adjust it according to your specific setup if necessary.
+
+5. **Permissions:** Make sure your user has sufficient permissions to access the serial port (`/dev/ttyACM0`). This typically means being part of the `dialout` group as described earlier.
+
+6. **ROS Environment Setup:** Ensure your ROS environment variables are properly set up. This typically involves sourcing your ROS setup script (e.g., `source /opt/ros/<distro>/setup.bash`).
+
+### Steps to Run the Command:
+
+Once you have ensured all the prerequisites are met:
+
+1. Open a terminal.
+
+2. Source your ROS setup script:
+   ```bash
+   source /opt/ros/<distro>/setup.bash
+   ```
+   Replace `<distro>` with your ROS distribution (e.g., `kinetic`, `melodic`).
+
+3. Navigate to your ROS workspace or package directory where you want to run `rosserial_python`.
+
+4. Run the command:
+   ```bash
+   rosrun rosserial_python serial_node.py /dev/ttyACM0 _baud:=57600
+   ```
+   - Note the underscore `_` before `baud`. This is the correct syntax for setting parameters when using `rosrun`.
+
+5. The `serial_node.py` should now start running, establishing communication with the device connected to `/dev/ttyACM0` at `57600` baud rate.
+
+By following these steps, you should be able to run the `rosserial_python` node successfully on Ubuntu 16.04 with ROS.
