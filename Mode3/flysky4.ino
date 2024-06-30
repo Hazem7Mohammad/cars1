@@ -43,12 +43,15 @@ void setup() {
 
 void loop() {
   ch1Value = readChannel(CH1, -100, 100, 0);
-  if ch1Value > 0 {
+  if ch1Value > 50 {
     map(speed, 0, 100, 0, 255)
     forward();
   } 
-  else if ch1Value < 0 {
+  else if ch1Value < -50 {
     map(speed, 0, -100, 0, 255)
+  }
+  else : {
+    off();
   }
   ch2Value = readChannel(CH2, -100, 100, 0);
   ch3Value = readChannel(CH3, -100, 100, -100);
