@@ -1,6 +1,4 @@
-mode 3 need to finally fix the relible flysky code 
-
-then go to ros control car using teleop 
+go to ros control car using teleop 
 
 then car driven by qr code or something similar like ball following. 
 
