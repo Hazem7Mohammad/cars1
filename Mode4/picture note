@@ -1,0 +1,22 @@
+6 commands to control car from cmd code 
+
+open terminals 
+
+1 first you need to enter arduino file 
+2 second in file u need to open arduino 
+3 third command open roscore
+4 command give permission to arduino
+
+then upload the code to arduiono
+
+5 command open serial node for python ros
+6 teleop twist for controling car press q to increas speed and then ( i forward , backward j left l right k stop )
+
+
+so you need to be installed the next
+arduino 
+ros
+serial node
+teleop 
+
+also need to know how to even have ros system 
