@@ -1,1 +1,13 @@
 follow tennis ball 
+
+1 go arduino file 
+2 open arduino 
+3 roscore
+4 sudo chmod permission
+
+upload code arduino 
+
+5 rosserial 
+6 rosrun python ball follower 
+
+python code and arduino code versions will be uploaded 
